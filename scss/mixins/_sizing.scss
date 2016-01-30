@@ -1,0 +1,23 @@
+@mixin flex() {
+  display: flex;
+}
+@mixin flex-wrap($wrap) {
+  flex-wrap: $wrap;
+}
+@mixin justify-content($content) {
+  justify-content: $content;
+}
+@mixin col($size) {
+  width: calc(#{$size} / #{$max-column-count}  * 100% - #{$gutter-size});
+  margin: $gutter-size / 2;
+  padding: 5px 0;
+}
+@mixin padding($padding...) {
+  padding: $padding;
+}
+@mixin margin($margin...) {
+  margin: $margin;
+}
+@mixin os($offset) {
+  margin-left: calc(#{$offset} / #{$max-column-count}  * 100% + #{$gutter-size} / 2);
+}

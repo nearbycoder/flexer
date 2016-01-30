@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html ng-app='AccordionDemo'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		<title>Flexer</title>
+	</head>
+	<body>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Lobster);
+		body {
+			background-color: #7D6BC9;
+			font-family: Arial;
+			color: #212121;
+		}
+		.white {
+			background-color: #ffffff;
+		}
+		.primary {
+			color: #7D6BC9;
+			font-family: Hack, monospace;
+			text-align: center;
+		}
+		.around {
+			justify-content: space-around;
+		}
+		h1 {
+    	font-size: 100px;
+    	margin: 20px;
+    	text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
+    	font-family: 'Lobster', cursive;
+    	color: #ffffff;
+    }
+    h4 {
+    	font-size: 16px;
+    	margin: 20px;
+    	font-family: Hack, monospace;
+    	color: #ffffff;
+    }
+    code, pre {
+    	font-family: Hack, monospace;
+    	font-size: 12px;
+    	padding: 10px;
+    	border-radius: 2px;
+    	color: #6D68CC;
+    	background-color: #FFFFFF;
+    	box-shadow: rgba(51,51,51,0.51) 0px 2px 2px;
+		}
+	</style>			
+		<div class="container">
+			<div class="row around">
+				<h1>flexer</h1>
+			</div>
+			<div class="row">
+				<h4>flexer is a super simple grid made with flexbox that can be modified to your liking. The gutters in flexer are pixel perfect. They can easily be modified to however large or small you would like them.</h4>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 white primary">
+					.col-sm-12
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 white primary">
+					.col-sm-4
+				</div>
+				<div class="col-sm-8 white primary">
+					.col-sm-8
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 white primary">
+					.col-sm-6
+				</div>
+				<div class="col-sm-6 white primary">
+					.col-sm-6
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9 white primary">
+					.col-sm-9
+				</div>
+				<div class="col-sm-3 white primary">
+					.col-sm-3
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 white primary">
+					.col-sm-4
+				</div>
+				<div class="col-sm-4 white primary">
+					.col-sm-4
+				</div>
+				<div class="col-sm-4 white primary">
+					.col-sm-4
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 white primary">
+					.col-sm-3
+				</div>
+				<div class="col-sm-3 white primary">
+					.col-sm-3
+				</div>
+				<div class="col-sm-3 white primary">
+					.col-sm-3
+				</div>
+				<div class="col-sm-3 white primary">
+					.col-sm-3
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+				<div class="col-sm-2 white primary">
+					.col-sm-2
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div> 
+				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
+				</div>
+			</div>
+			<div class="row">
+				<h4>Different sizes can be used to provide breakpoints for responsiveness. For example check out the grid below. When you resize your browser you will see the different breakpoints used on the grid.</h4>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-12 col-md-6 col-lg-4 col-xl-5 white primary"
+						 data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-5">
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-6 col-lg-8 col-xl-7 white primary" 
+					   data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-8" data-xl=".col-xl-7">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4 white primary"
+						 data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4">
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4 white primary" 
+					   data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4 white primary" 
+					   data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-4" data-xl=".col-lg-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary"
+						 data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
+				</div>
+			</div>
+			<div class="row">
+				<h4>Offsets can be used to make sure you have space between different grid elements. Below are a few examples off offsets.</h4>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 white primary"
+						 data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xl-os-3 white primary" 
+					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3 .col-xl-os-3">
+				</div>
+				<div class="col-xs-12 col-xs-os-0 col-sm-6 col-sm-os-3 col-md-6 col-md-os-6 col-lg-os-0 col-lg-4 col-xl-3 white primary" 
+					   data-xs=".col-xs-12" data-sm=".col-sm-6 .col-sm-os-3" data-md=".col-md-6 .col-md-os-6" data-lg=".col-lg-4" data-xl=".col-xl-3">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-os-6 col-lg-6 col-xl-6 col-xl-os-6 white primary" 
+					   data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6 col-lg-os-6" data-xl=".col-xl-6 .col-xl-os-6">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 white primary" 
+					   data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6" data-xl=".col-xl-6">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	var resizeId;
+	$(window).resize(function() {
+	    clearTimeout(resizeId);
+	    resizeId = setTimeout(doneResizing, 200);
+	});
+
+	function doneResizing(){
+		var w = window.innerWidth;
+    if (w >= 1171) {
+    	var div = $('div[data-xl]')
+    	div.each(function(index, elem) {
+    		$(elem).html($(elem).attr('data-xl'))
+    	})
+    } else if (w >= 971) {
+    	var div = $('div[data-lg]')
+    	div.each(function(index, elem) {
+    		$(elem).html($(elem).attr('data-lg'))
+    	})
+    } else if (w >= 751) {
+    	var div = $('div[data-md]')
+    	div.each(function(index, elem) {
+    		$(elem).html($(elem).attr('data-md'))
+    	})
+    } else if (w <= 400) {
+    	var div = $('div[data-xs]')
+    	div.each(function(index, elem) {
+    		$(elem).html($(elem).attr('data-xs'))
+    	})
+    } else {
+    	var div = $('div[data-sm]')
+    	div.each(function(index, elem) {
+    		$(elem).html($(elem).attr('data-sm'))
+    	})
+    }
+	};
+	$(function() {
+		doneResizing();
+	});
+</script>

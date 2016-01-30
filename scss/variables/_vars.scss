@@ -1,0 +1,51 @@
+/*
+$row: declare prefix to use on rows
+EXAMPLE
+------------
+.r-sm-6
+------------
+*/
+$col: col;
+$row: row;
+/*
+$row-width: default row with
+$min-column-count: smallest column sizes you will use
+$max-column-count: how many columns you would like to have
+*/
+$row-width: 98%;
+$min-column-count: 1;
+$max-column-count: 12;
+/*
+Sizind default names for all different sizes
+*/
+$xs: xs;
+$sm: sm;
+$md: md;
+$lg: lg;
+$xl: xl;
+/*
+Sizind default media breakpoints for all different sizes
+sm-size is set between md and xs as well can be used if that is the only size you want without breakpoints
+*/
+$xs-size: 400px;
+$md-size: 751px;
+$lg-size: 971px;
+$xl-size: 1171px;
+/*
+$container: declare name to use for container
+EXAMPLE
+------------
+.container
+.c
+------------
+*/
+$container: container;
+/*
+$max-container-width: declare the max width you would like the container to expand out to
+$gutter-size: divide in half to get margin-left and margin-right
+*/
+$max-container-width: 1400px;
+$gutter-size: 10px;
+
+$primary: #56BFED;
+$secondary: #7D6BC9;
