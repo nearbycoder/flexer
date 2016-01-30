@@ -10,6 +10,11 @@
   width: $row-width;
   @include flex-wrap(wrap);
 }
+.#{$row}-inner {
+  @include flex;
+  width: 100%;
+  @include flex-wrap(wrap);
+}
 @for $i from  $min-column-count through $max-column-count {
   .#{$col}-#{$sm}-#{$i} {
     @include col($i);
