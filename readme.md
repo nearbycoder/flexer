@@ -1,3 +1,3 @@
-![Flexer](src/flexer.svg?raw=true "Flexer")
+![Flexer](src/flexer.png?raw=true "Flexer")
 
 ##### Simple grid layout with flexbox
