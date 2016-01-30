@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html ng-app='AccordionDemo'>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" href="./css/flexer.css">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-		<title>Flexer</title>
-	</head>
-	<body>
-	<a href="https://github.com/nearbycoder/flexer" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#ffffff; color:#7D68CC; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/flexer.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<title>Flexer</title>
+</head>
+<body>
+	<a href="https://github.com/nearbycoder/flexer" class="github-corner">
+		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#ffffff; color:#7D68CC; position: absolute; top: 0; border: 0; right: 0;">
+			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+			<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+			<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+		</svg>
+	</a>
+	<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 	<style>
 		@import url(https://fonts.googleapis.com/css?family=Lobster);
 		body {
@@ -20,15 +27,26 @@
 		.container {
 			padding: 30px 0 60px;
 		}
-		.helper-text span:nth-child(1) {
+		.helper-info {
 			font-weight: bolder;
 			color: #7D68CC;
+			padding: 5px;
 			position: relative;
-			background-color: #ffffff;
+			display: flex;
+		  align-items: flex-end;
+		  justify-content: flex-end;
+
 		}
-		.helper-text span:nth-child(2) {
-			background-color: #ffffff;
+		@media (max-width:751px) {
+		  	.helper-info {
+			  	align-items: flex-start;
+			  	justify-content: flex-start;
+			  }
+		}
+		.helper-info-description {
 			color: #7D68CC;
+			padding: 5px;
+			align-items: center;
 			position: relative;
 		}
 		@media (max-width:500px) {
@@ -38,6 +56,7 @@
 		}
 		.white {
 			background-color: #ffffff;
+			box-shadow: rgba(51,51,51,0.51) 0px 2px 2px;
 		}
 		.primary {
 			color: #7D6BC9;
@@ -54,267 +73,353 @@
 			justify-content: space-around;
 		}
 		h1 {
-    	font-size: 100px;
-    	margin: 20px;
-    	text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
-    	font-family: 'Lobster', cursive;
-    	color: #ffffff;
-    }
-    h4 {
-    	font-size: 16px;
-    	margin: 20px;
-    	font-family: Hack, monospace;
-    	color: #ffffff;
-    }
-    code, pre {
-    	font-family: Hack, monospace;
-			margin: 0 auto;
-    	font-size: 12px;
-    	padding: 10px;
-    	border-radius: 2px;
-    	color: #6D68CC;
-    	background-color: #FFFFFF;
+			font-size: 100px;
+			margin: 20px;
+			text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
+			font-family: 'Lobster', cursive;
+			color: #ffffff;
 		}
-	</style>			
-		<div class="container">
-			<div class="row around">
-				<h1>flexer</h1>
-			</div>
-			<div class="row">
-				<h4>flexer is a super simple grid made with flexbox that can be modified to your liking. The gutters in flexer are pixel perfect. They can easily be modified to however large or small you would like them.</h4>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 white primary">
-					.col-sm-12
+		h4 {
+			font-size: 16px;
+			margin: 20px;
+			font-family: Hack, monospace;
+			color: #ffffff;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+			padding: 20px;
+
+		}
+		.title {
+			background-color: #56BFED;
+			box-shadow: rgba(51,51,51,0.51) 0px 2px 2px;
+		}
+		code, pre {
+			font-family: Hack, monospace;
+			margin: 0 auto;
+			font-size: 12px;
+			padding: 10px;
+			border-radius: 2px;
+			color: #6D68CC;
+			background-color: #FFFFFF;
+		}
+	</style>
+	<div class="container">
+		<div class="row around">
+			<h1>flexer</h1>
+		</div>
+		<div class="row">
+			<h4 class="title">
+				flexer is a super simple grid made with flexbox that can be modified to your liking. The gutters in flexer are pixel perfect. They can easily be modified to however large or small you would like them.
+			</h4>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 white primary">.col-sm-12</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 white primary">.col-sm-4</div>
+			<div class="col-sm-8 white primary">.col-sm-8</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 white primary">.col-sm-6</div>
+			<div class="col-sm-6 white primary">.col-sm-6</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-9 white primary">.col-sm-9</div>
+			<div class="col-sm-3 white primary">.col-sm-3</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 white primary">.col-sm-4</div>
+			<div class="col-sm-4 white primary">.col-sm-4</div>
+			<div class="col-sm-4 white primary">.col-sm-4</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 white primary">.col-sm-3</div>
+			<div class="col-sm-3 white primary">.col-sm-3</div>
+			<div class="col-sm-3 white primary">.col-sm-3</div>
+			<div class="col-sm-3 white primary">.col-sm-3</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+			<div class="col-sm-2 white primary">.col-sm-2</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+			data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+		data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+	data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+			<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
+data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"></div>
+		</div>
+		<div class="row">
+			<h4 class="title">
+				Different sizes can be used to provide breakpoints for responsiveness. For example check out the grid below. When you resize your browser you will see the different breakpoints used on the grid.
+			</h4>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-sm-12 col-md-6 col-lg-4 col-xl-5 white primary"
+	data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-5"></div>
+			<div class="col-xs-6 col-sm-12 col-md-6 col-lg-8 col-xl-7 white primary" 
+data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-8" data-xl=".col-xl-7"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4 white primary"
+	data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 white primary" 
+data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4"></div>
+			<div class="col-sm-12 col-md-12 col-lg-4 white primary" 
+data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-4" data-xl=".col-lg-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary"
+	data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3"></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3"></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3"></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
+data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3"></div>
+		</div>
+		<div class="row">
+			<h4 class="title">
+				Offsets can be used to make sure you have space between different grid elements. Below are a few examples of offsets. If your using these the margin for the offset will be on the left of the element.
+			</h4>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 white primary"
+	data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3"></div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xl-os-3 white primary" 
+data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3 .col-xl-os-3"></div>
+			<div class="col-xs-12 col-xs-os-0 col-sm-6 col-sm-os-3 col-md-6 col-md-os-6 col-lg-os-0 col-lg-4 col-xl-3 white primary" 
+data-xs=".col-xs-12" data-sm=".col-sm-6 .col-sm-os-3" data-md=".col-md-6 .col-md-os-6" data-lg=".col-lg-4" data-xl=".col-xl-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-os-6 col-lg-6 col-xl-6 col-xl-os-6 white primary" 
+	data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6 col-lg-os-6" data-xl=".col-xl-6 .col-xl-os-6"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 white primary" 
+	data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6" data-xl=".col-xl-6"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-outer-6 col-sm-outer-12">
+				<h4 class='text-align-center title'>Helpers can be used to add functionality to your dom nodes.</h4>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.clear-both</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">clears all float if any are used.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.no-padding</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">zero out padding.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.flex-center-right</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">center item vertically and to the right.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.flex-center-left</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">center item vertically and to the left.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.flex-center-center</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">center item vertically and horizontally.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.pad-10 to 60</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">pad all sides in 10px increments.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.margin-tb-10 to 60</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">margin top / bottom in 10px increments.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.margin-10 to 60</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">margin all sides in 10px increments.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.pad-10-bottom to 60</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">pad bottom  in 10px increments.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.font-10 to 60</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">font size in 10px increments.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-align-left</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align left.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-align-center</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align center.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-align-right</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align right.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-left-small</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align left small media query.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-center-small</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align center small media query.</div>
+					</div>
+				</div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.text-right-small</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">text align right small media query.</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-4 white primary">
-					.col-sm-4
+			<div class="col-md-outer-6 col-sm-outer-12">
+				<h4 class='text-align-center title'>Additional column classes to use.</h4>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.col-#{media}-outer-#{size}</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">works for all sizes, does not add default gutters</div>
+					</div>
 				</div>
-				<div class="col-sm-8 white primary">
-					.col-sm-8
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.row-inner</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">same as row but is 100% width for inner rows.</div>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 white primary">
-					.col-sm-6
-				</div>
-				<div class="col-sm-6 white primary">
-					.col-sm-6
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-9 white primary">
-					.col-sm-9
-				</div>
-				<div class="col-sm-3 white primary">
-					.col-sm-3
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 white primary">
-					.col-sm-4
-				</div>
-				<div class="col-sm-4 white primary">
-					.col-sm-4
-				</div>
-				<div class="col-sm-4 white primary">
-					.col-sm-4
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-3 white primary">
-					.col-sm-3
-				</div>
-				<div class="col-sm-3 white primary">
-					.col-sm-3
-				</div>
-				<div class="col-sm-3 white primary">
-					.col-sm-3
-				</div>
-				<div class="col-sm-3 white primary">
-					.col-sm-3
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-				<div class="col-sm-2 white primary">
-					.col-sm-2
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4"> 
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div> 
-				<div class="col-md-1 col-sm-3 col-xs-4 white primary" 
-					   data-xl=".col-md-1" data-lg=".col-md-1" data-md=".col-md-1" data-sm=".col-sm-3" data-xs=".col-xs-4">
-				</div>
-			</div>
-			<div class="row">
-				<h4>Different sizes can be used to provide breakpoints for responsiveness. For example check out the grid below. When you resize your browser you will see the different breakpoints used on the grid.</h4>
-			</div>
-			<div class="row">
-				<div class="col-xs-6 col-sm-12 col-md-6 col-lg-4 col-xl-5 white primary"
-						 data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-5">
-				</div>
-				<div class="col-xs-6 col-sm-12 col-md-6 col-lg-8 col-xl-7 white primary" 
-					   data-xs=".col-xs-6" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-8" data-xl=".col-xl-7">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-4 white primary"
-						 data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4">
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 white primary" 
-					   data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-lg-4">
-				</div>
-				<div class="col-sm-12 col-md-12 col-lg-4 white primary" 
-					   data-xs=".col-sm-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-4" data-xl=".col-lg-4">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary"
-						 data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
-					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
-					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 white primary" 
-					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-3" data-xl=".col-xl-3">
-				</div>
-			</div>
-			<div class="row">
-				<h4>Offsets can be used to make sure you have space between different grid elements. Below are a few examples off offsets.</h4>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 white primary"
-						 data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3">
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xl-os-3 white primary" 
-					   data-xs=".col-xs-12" data-sm=".col-sm-6" data-md=".col-md-6" data-lg=".col-lg-4" data-xl=".col-xl-3 .col-xl-os-3">
-				</div>
-				<div class="col-xs-12 col-xs-os-0 col-sm-6 col-sm-os-3 col-md-6 col-md-os-6 col-lg-os-0 col-lg-4 col-xl-3 white primary" 
-					   data-xs=".col-xs-12" data-sm=".col-sm-6 .col-sm-os-3" data-md=".col-md-6 .col-md-os-6" data-lg=".col-lg-4" data-xl=".col-xl-3">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-os-6 col-lg-6 col-xl-6 col-xl-os-6 white primary" 
-					   data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6 col-lg-os-6" data-xl=".col-xl-6 .col-xl-os-6">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 white primary" 
-					   data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6" data-xl=".col-xl-6">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-outer-6 col-sm-outer-12">
-					<h4 class='text-align-center'>Helpers can be used to add functionality to your dom nodes.</h4>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.clear-both</span><span class="col-sm-12 col-md-6">clears all float if any are used.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.no-padding</span><span class="col-sm-12 col-md-6">zero out padding.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.flex-center-right</span><span class="col-sm-12 col-md-6">center item vertically and to the right.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.flex-center-left</span><span class="col-sm-12 col-md-6">center item vertically and to the left.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.flex-center-center</span><span class="col-sm-12 col-md-6">center item vertically and horizontally.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.pad-10 to 60</span><span class="col-sm-12 col-md-6">pad all sides in 10px increments.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.margin-tb-10 to 60</span><span class="col-sm-12 col-md-6">margin top / bottom in 10px increments.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.margin-10 to 60</span><span class="col-sm-12 col-md-6">margin all sides in 10px increments.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.pad-10-bottom to 60</span><span class="col-sm-12 col-md-6">pad bottom  in 10px increments.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.font-10 to 60</span><span class="col-sm-12 col-md-6">font size in 10px increments.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-align-left</span><span class="col-sm-12 col-md-6">text align left.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-align-center</span><span class="col-sm-12 col-md-6">text align center.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-align-right</span><span class="col-sm-12 col-md-6">text align right.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-left-small</span><span class="col-sm-12 col-md-6">text align left small media query.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-center-small</span><span class="col-sm-12 col-md-6">text align center small media query.</span></div>
-					<div class='helper-text row-inner'><span class="col-sm-12 col-md-6">.text-right-small</span><span class="col-sm-12 col-md-6">text align right small media query.</span></div>
+				<div class='helper-text row-inner'>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info">.col-#{media}-os-#{size}</div>
+					</div>
+					<div class="col-sm-12 col-md-6 white">
+						<div class="helper-info-description">used for offsets on different media sizes.</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
 
 <script>
 	var resizeId;
 	$(window).resize(function() {
-	    clearTimeout(resizeId);
-	    resizeId = setTimeout(doneResizing, 200);
+		clearTimeout(resizeId);
+		resizeId = setTimeout(doneResizing, 200);
 	});
 
 	function doneResizing(){
 		var w = window.innerWidth;
-    if (w >= 1171) {
-    	var div = $('div[data-xl]')
-    	div.each(function(index, elem) {
-    		$(elem).html($(elem).attr('data-xl'))
-    	})
-    } else if (w >= 971) {
-    	var div = $('div[data-lg]')
-    	div.each(function(index, elem) {
-    		$(elem).html($(elem).attr('data-lg'))
-    	})
-    } else if (w >= 751) {
-    	var div = $('div[data-md]')
-    	div.each(function(index, elem) {
-    		$(elem).html($(elem).attr('data-md'))
-    	})
-    } else if (w <= 400) {
-    	var div = $('div[data-xs]')
-    	div.each(function(index, elem) {
-    		$(elem).html($(elem).attr('data-xs'))
-    	})
-    } else {
-    	var div = $('div[data-sm]')
-    	div.each(function(index, elem) {
-    		$(elem).html($(elem).attr('data-sm'))
-    	})
-    }
+		if (w >= 1171) {
+			var div = $('div[data-xl]')
+			div.each(function(index, elem) {
+				$(elem).html($(elem).attr('data-xl'))
+			})
+		} else if (w >= 971) {
+			var div = $('div[data-lg]')
+			div.each(function(index, elem) {
+				$(elem).html($(elem).attr('data-lg'))
+			})
+		} else if (w >= 751) {
+			var div = $('div[data-md]')
+			div.each(function(index, elem) {
+				$(elem).html($(elem).attr('data-md'))
+			})
+		} else if (w <= 400) {
+			var div = $('div[data-xs]')
+			div.each(function(index, elem) {
+				$(elem).html($(elem).attr('data-xs'))
+			})
+		} else {
+			var div = $('div[data-sm]')
+			div.each(function(index, elem) {
+				$(elem).html($(elem).attr('data-sm'))
+			})
+		}
 	};
 	$(function() {
 		doneResizing();
