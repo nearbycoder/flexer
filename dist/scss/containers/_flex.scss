@@ -43,6 +43,39 @@
     }
   }
 }
+@for $i from  $min-column-count through $max-column-count {
+  .#{$col}-#{$sm}-outer-#{$i} {
+    @include col-outer($i);
+  }
+}
+@media (min-width: #{$md-size}) {
+  @for $i from  $min-column-count through $max-column-count {
+    .#{$col}-#{$md}-outer-#{$i} {
+      @include col-outer($i);
+    }
+  }
+}
+@media (min-width: #{$lg-size}) {
+  @for $i from  $min-column-count through $max-column-count {
+    .#{$col}-#{$lg}-outer-#{$i} {
+      @include col-outer($i);
+    }
+  }
+}
+@media (min-width: #{$xl-size}) {
+  @for $i from  $min-column-count through $max-column-count {
+    .#{$col}-#{$xl}-outer-#{$i} {
+      @include col($i);
+    }
+  }
+}
+@media (max-width: #{$xs-size}) and (min-width: #{$xs-size}) {
+  @for $i from  $min-column-count through $max-column-count {
+    .#{$col}-#{$xs}-outer-#{$i} {
+      @include col-outer($i);
+    }
+  }
+}
 @for $i from  0 through $max-column-count {
   .#{$col}-#{$sm}-os-#{$i} {
     @include os($i);
