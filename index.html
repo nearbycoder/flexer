@@ -17,6 +17,25 @@
 			font-family: Arial;
 			color: #212121;
 		}
+		.container {
+			padding: 30px 0 60px;
+		}
+		.helper-text span:nth-child(1) {
+			font-weight: bolder;
+			color: #7D68CC;
+			position: relative;
+			background-color: #ffffff;
+		}
+		.helper-text span:nth-child(2) {
+			background-color: #ffffff;
+			color: #7D68CC;
+			position: relative;
+		}
+		@media (max-width:500px) {
+			.small-fonts {
+				font-size: 9px;
+			}
+		}
 		.white {
 			background-color: #ffffff;
 		}
@@ -24,6 +43,12 @@
 			color: #7D6BC9;
 			font-family: Hack, monospace;
 			text-align: center;
+		}
+		.row-100 {
+			width: 100%;
+		}
+		.no-margin {
+			margin: 0;
 		}
 		.around {
 			justify-content: space-around;
@@ -43,12 +68,12 @@
     }
     code, pre {
     	font-family: Hack, monospace;
+			margin: 0 auto;
     	font-size: 12px;
     	padding: 10px;
     	border-radius: 2px;
     	color: #6D68CC;
     	background-color: #FFFFFF;
-    	box-shadow: rgba(51,51,51,0.51) 0px 2px 2px;
 		}
 	</style>			
 		<div class="container">
@@ -228,6 +253,27 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 white primary" 
 					   data-xs=".col-md-12" data-sm=".col-sm-12" data-md=".col-md-12" data-lg=".col-lg-6" data-xl=".col-xl-6">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h4 class='text-align-center'>Helpers can be used to add functionality to your dom nodes.</h4>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.clear-both</span><span class="col-sm-12 col-md-6">clears all float if any are used.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.no-padding</span><span class="col-sm-12 col-md-6">zero out padding.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.flex-center-right</span><span class="col-sm-12 col-md-6">center item vertically and to the right.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.flex-center-left</span><span class="col-sm-12 col-md-6">center item vertically and to the left.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.flex-center-center</span><span class="col-sm-12 col-md-6">center item vertically and horizontally.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.pad-10 to 60</span><span class="col-sm-12 col-md-6">pad all sides in 10px increments.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.margin-tb-10 to 60</span><span class="col-sm-12 col-md-6">margin top / bottom in 10px increments.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.margin-10 to 60</span><span class="col-sm-12 col-md-6">margin all sides in 10px increments.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.pad-10-bottom to 60</span><span class="col-sm-12 col-md-6">pad bottom  in 10px increments.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.font-10 to 60</span><span class="col-sm-12 col-md-6">font size in 10px increments.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-align-left</span><span class="col-sm-12 col-md-6">text align left.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-align-center</span><span class="col-sm-12 col-md-6">text align center.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-align-right</span><span class="col-sm-12 col-md-6">text align right.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-left-small</span><span class="col-sm-12 col-md-6">text align left small media query.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-center-small</span><span class="col-sm-12 col-md-6">text align center small media query.</span></div>
+					<div class='helper-text row'><span class="col-sm-12 col-md-6">.text-right-small</span><span class="col-sm-12 col-md-6">text align right small media query.</span></div>
 				</div>
 			</div>
 		</div>
